@@ -1,0 +1,89 @@
+{
+  "binary_classification": {
+    "task": "Signal vs Glitch",
+    "dataset_size": {
+      "train": 1136,
+      "test": 48
+    },
+    "best_models": {
+      "Gradient Boosting": {
+        "accuracy": 1.0,
+        "roc_auc": 1.0
+      },
+      "Random Forest": {
+        "accuracy": 0.9792,
+        "roc_auc": 0.9949
+      },
+      "SVM": {
+        "accuracy": 0.9792,
+        "roc_auc": 0.998
+      },
+      "Logistic Regression": {
+        "accuracy": 0.9792,
+        "roc_auc": 0.9717
+      },
+      "Deep MLP": {
+        "accuracy": 0.9792,
+        "roc_auc": 0.9333
+      }
+    }
+  },
+  "signal_type_classification": {
+    "task": "BBH vs BNS",
+    "dataset_size": {
+      "train": 158,
+      "test": 15
+    },
+    "best_models": {
+      "Random Forest": {
+        "accuracy": 0.8667,
+        "f1_score": 0.8048
+      },
+      "Gradient Boosting": {
+        "accuracy": 0.8,
+        "f1_score": 0.7704
+      },
+      "SVM": {
+        "accuracy": 0.6,
+        "f1_score": 0.65
+      }
+    }
+  },
+  "glitch_type_classification": {
+    "task": "7 Glitch Types",
+    "dataset_size": {
+      "train": 978,
+      "test": 33
+    },
+    "best_models": {
+      "Random Forest": {
+        "accuracy": 0.303,
+        "f1_score": 0.2499
+      },
+      "Gradient Boosting": {
+        "accuracy": 0.303,
+        "f1_score": 0.2607
+      },
+      "SVM": {
+        "accuracy": 0.1212,
+        "f1_score": 0.0824
+      }
+    }
+  },
+  "metadata": {
+    "total_features": 16,
+    "feature_types": [
+      "statistical",
+      "amplitude",
+      "time_domain",
+      "frequency_domain",
+      "energy"
+    ],
+    "data_preprocessing": [
+      "nan_imputation",
+      "standard_scaling",
+      "class_balancing"
+    ],
+    "timestamp": "2025-01-25"
+  }
+}
